@@ -13,9 +13,16 @@
         android:theme="@style/Theme.NewGenKeyboard"
         tools:targetApi="31">
 
+        <!-- 키보드 input IME 설정 -->
+        <!--
+
+        permission="android.permission.BIND_INPUT_METHOD" - 안드로이드 IO권한 접근에 필요한 특수 permission
+        name="android.view.InputMethod" - 해당 filter를 OS가 검색하여 keyboard리스트에 올림
+        meta-data - 키보드 관련 기본 정보
+        -->
         <service
-            android:name="MyIMEservice"
-            android:label="inAppKeyboard"
+            android:name="IMEservice"
+            android:label="alphanumeric"
             android:permission="android.permission.BIND_INPUT_METHOD"
             android:exported="true">
             <intent-filter>
@@ -39,6 +46,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
     </application>
 
 </manifest>

@@ -4,7 +4,7 @@
     android:settingsActivity="com.example.softkeyboard.Settings">
     <subtype
         android:label="keyboard(Custom)"
-        android:imeSubtypeLocale="Number"
-        android:imeSubtypeMode="keyboard" />
+        android:imeSubtypeLocale="alphanumeric"
+        android:imeSubtypeMode="keyboard"/>
 
 </input-method>
